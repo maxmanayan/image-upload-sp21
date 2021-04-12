@@ -6,5 +6,7 @@ Rails.application.routes.draw do
     get "/api_test", to:'static#api_test'
     post "test_upload1", to: "uzers#test_upload1"
     get "uzers", to: "uzers#index"
+
+    resources :memes
   end
 end
