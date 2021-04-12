@@ -9,4 +9,7 @@ Rails.application.routes.draw do
 
     resources :memes
   end
+
+  # if no other routes match, this is the default (catch-all) route
+  get '*other', to: 'static#index' 
 end
