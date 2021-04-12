@@ -30,7 +30,7 @@ class Api::UzersController < ApplicationController
                 render json: user
             end
         rescue => e
-            binding.pry
+            # binding.pry
             render json: {errors: e}, status: 422 
         end
       end
